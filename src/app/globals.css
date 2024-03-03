@@ -1,0 +1,446 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+button {
+  user-select: none;
+}
+
+/* SCROLLBAR */
+body::-webkit-scrollbar-track,
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 7px;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.44, #cc1111),
+    color-stop(0.72, #a00505),
+    color-stop(0.86, #850505)
+  );
+}
+
+/* OUTLINE TEXT*/
+.outline-text {
+  -webkit-background-clip: text;
+  /* outline */
+  -webkit-text-stroke: 2px #d1944b;
+  -webkit-text-fill-color: transparent;
+  /* fallback */
+  color: #333;
+  /* for demo purpose */
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  text-align: center;
+  color: transparent;
+}
+
+.outline-text span {
+  -webkit-background-clip: text;
+  /* outline */
+  -webkit-text-stroke: 1px #e5e3e387;
+  -webkit-text-fill-color: transparent;
+}
+
+/* SPONSORS */
+.slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.slider::before,
+.slider::after {
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slide::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slide-track {
+  animation: scrollSlideTrack infinite 40s linear;
+}
+
+@keyframes scrollSlideTrack {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-120px * 36));
+  }
+}
+
+/* ----------- */
+
+/* TEXT */
+.gradient-text-1 {
+  background: #d1944b;
+  background: linear-gradient(81deg, #ffff 50%, #d1944b 110%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-2 {
+  background: #d1944b;
+  background: linear-gradient(81deg, #ffff 0%, #d1944b 12%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-3 {
+  background: #d1944b;
+  background: linear-gradient(81deg, #ffff 50%, #d1944b 85%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-4 {
+  background: #d1944b;
+  background: linear-gradient(167deg, #ffff 0%, #d1944b 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-5 {
+  background: #d1944b;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 1) 35%,
+    rgba(195, 134, 61, 1) 65%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-6 {
+  background: #d1944b;
+  background: linear-gradient(
+    175deg,
+    rgba(255, 255, 255, 1) 15%,
+    rgba(195, 134, 61, 1) 55%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 600px) {
+  .gradient-text-2 {
+    background: #d1944b;
+    background: linear-gradient(81deg, #ffff 0%, #d1944b 35%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* CREATOR CARD*/
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  perspective: 2500px;
+}
+
+.card:hover .wrapper {
+  transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+  filter: drop-shadow(30px 10px 4px #d1954b43);
+  -webkit-filter: drop-shadow(2px 35px 32px -8px rgba(0, 0, 0, 0.75));
+}
+
+.card:hover .characherIMG {
+  opacity: 1;
+  transform: translate3d(0%, -10%, 100px);
+}
+
+/* SHADDOW EFFECT */
+.shadow-effect-2,
+.shadow-effect-2-md {
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #fff 40%,
+    #fff 60%,
+    transparent
+  );
+}
+
+.shadow-effect {
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #fff 20%,
+    #fff 80%,
+    transparent
+  );
+}
+.shadow-effect-on-md {
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #fff 20%,
+    #fff 80%,
+    transparent
+  );
+}
+
+@media screen and (max-width: 768px) {
+  .shadow-effect-on-md,
+  .shadow-effect-2-md {
+    -webkit-mask-image: none !important;
+  }
+}
+
+/* IMAGE DARK */
+.image-dark {
+  filter: brightness(0.7);
+}
+/* LINEAR BORDER */
+.linear-border {
+  background: linear-gradient(
+    146.51deg,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0) 34.17%,
+    rgba(255, 255, 255, 0.1) 80.09%
+  );
+}
+
+/* SCROLLBAR HIDE */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none !important;
+}
+
+.scroll {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #fff 20%,
+    #fff 80%,
+    transparent
+  );
+}
+.scroll div {
+  white-space: nowrap;
+  animation: scroll 30s linear infinite;
+  animation-delay: calc(30s * -1);
+}
+.scroll div:nth-child(2) {
+  animation: scroll2 30s linear infinite;
+  animation-delay: calc(30s / -2);
+}
+
+.animated-outline-text {
+  background: -webkit-linear-gradient(0.47deg, #ffffff 20%, #d1944b 60%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-stroke: 5px transparent;
+  color: #151515;
+}
+
+.ReactCollapse--collapse {
+  transition: height 300ms !important;
+}
+
+/* KEYFRAMES */
+
+.infiniteRotate {
+  animation: rotate 5s linear infinite;
+  -webkit-animation: rotate 5s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes scroll2 {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+/*package red button*/
+
+.animatedGradientRed {
+  overflow: hidden !important;
+  background: transparent;
+
+  background-image: linear-gradient(
+    var(--rotate),
+    rgba(255, 255, 255, 0.6),
+    #cc1111 43%,
+    #a00505
+  );
+  animation: rotate 5s linear infinite;
+  -webkit-animation: rotate 5s linear infinite;
+}
+
+.animatedGradientBlack {
+  overflow: hidden;
+
+  background-image: linear-gradient(
+    var(--rotate),
+    rgba(255, 255, 255, 0.6),
+    rgba(18, 18, 18, 0.1) 37%,
+    rgba(29, 29, 29, 1) 100%
+  );
+  animation: rotate 5s linear infinite;
+  -webkit-animation: rotate 5s linear infinite;
+}
+
+.btnLinearBorder {
+  overflow: hidden;
+
+  background-image: linear-gradient(
+    var(--rotate),
+    rgba(255, 255, 255, 0.6),
+    #cc1111 43%,
+    #a00505
+  );
+  animation: rotate 3s linear infinite;
+  -webkit-animation: rotate 3s linear infinite;
+}
+
+/* REFLECTION */
+.reflection-effect {
+  overflow: hidden;
+  max-width: fit-content;
+  z-index: 1;
+  position: relative !important;
+  transition: background 0.5s ease-in-out;
+}
+
+.reflection-effect :after {
+  background: white;
+  content: "";
+  z-index: -1;
+  height: 155px;
+  left: -150px;
+  opacity: 0.8;
+  position: absolute;
+  top: -50px;
+  transform: rotate(35deg);
+  width: 50px;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.reflection-effect:hover ::after {
+  background: #fff;
+  opacity: 0;
+  left: 120%;
+  transform: rotate(40deg);
+}
+
+.redBTN {
+  background: linear-gradient(
+    90deg,
+    rgba(204, 17, 17, 1) 46%,
+    rgba(160, 5, 5, 1) 100%
+  );
+}
+
+.blackBTN {
+  background: linear-gradient(
+    90deg,
+    rgba(29, 29, 29, 1) 38%,
+    rgba(18, 18, 18, 1) 100%
+  );
+}
+
+.reflectionBTN {
+  -webkit-box-reflect: below 8px
+    linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+}
+
+.redBTN:hover,
+.blackBTN:hover {
+  background: white !important;
+  transition: background 1s ease-in-out;
+}
+
+.reflectionBTN:hover {
+  -webkit-box-reflect: below 8px
+    linear-gradient(transparent, rgba(0, 0, 0, 0.133));
+}
+
+/** CARD */
+.rapcult-card-container {
+  transition: transform 3s cubic-bezier(0, 0, 0, 1);
+}
+
+/* KEYFRAMES */
+
+@keyframes rotate {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+/* icon play hover */
+
+.iconPlay:hover > img {
+  filter: invert(46%) sepia(55%) saturate(5439%) hue-rotate(337deg)
+    brightness(81%) contrast(121%) !important;
+}
+
+.iconArrow:hover > div img {
+  filter: invert(46%) sepia(55%) saturate(5439%) hue-rotate(337deg)
+    brightness(81%) contrast(121%) !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
