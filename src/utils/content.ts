@@ -9,7 +9,7 @@ export const SPONSORS_TITLE = "Technology trusted by";
 // BENEFITS
 export const BENEFITS_TITLE = "Benefits";
 export const BENEFITS_PARAGRAPH =
-  "XWAYZ is an exclusive platform that provides insights into the latest industry trends and guides you on making the most of them.";
+  "Tuffex is an exclusive platform that provides insights into the latest industry trends and guides you on making the most of them.";
 export const BENEFITS_BTN_TEXT = "Join TUFFEX";
 
 // HOW IT WORKS
