@@ -90,43 +90,38 @@ export const benefitsList: Benefit[] = [
     videoSRC: "/videos/rapper1.mp4",
   },
   {
-    title: "Insider Insights and Resources",
-    subtitle:
-      "Stay ahead of industry trends with privileged access to cutting-edge research, market analyses, and expert advice.",
+    title: "Insider Insights and Resources about Music",
+    subtitle: "Gain access to a curated community of music industry elites",
     description:
-      "<bTuffex equips members with the knowledge and tools needed to navigate the ever-evolving landscape of the music business,</b> ensuring strategic decision-making and sustained success.",
+      "<b>From established artists to emerging talents,</b> Tuffex opens doors to forge meaningful relationships that propel your career forward.",
     videoSRC: "/videos/rapper2.mp4",
   },
   {
     title: "Promotional Support and Exposure",
-    subtitle:
-      "Amplify your presence and reach with tailored promotional campaigns and exposure through Tuffex's extensive network.",
+    subtitle: "Gain access to a curated community of music industry elites",
     description:
-      "<bWhether it's showcasing your latest releases or highlighting your achievements, </b> our platform provides a spotlight to elevate your profile and attract new opportunities.",
+      "<b>From established artists to emerging talents,</b> Tuffex opens doors to forge meaningful relationships that propel your career forward.",
     videoSRC: "/videos/rapper3.mp4",
   },
   {
     title: "Professional Development Workshops",
-    subtitle:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non orci.",
+    subtitle: "Gain access to a curated community of music industry elites",
     description:
-      "<b>Mauris ligula ipsum, pharetra a magna ac, ultrices vulputate arcu.</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut tortor id felis semper maximus non in est.",
+      "<b>From established artists to emerging talents,</b> Tuffex opens doors to forge meaningful relationships that propel your career forward.",
     videoSRC: "/videos/rapper4.mp4",
   },
   {
     title: "Access to Premium Events and Showcases",
-    subtitle:
-      "Experience VIP treatment at top-tier industry events, festivals, and showcases reserved for Tuffex members.",
+    subtitle: "Gain access to a curated community of music industry elites",
     description:
-      "<b>Rub shoulders with industry heavyweights, attend exclusive performances, </b> and gain insights from panel discussions and keynote speakers, all while enjoying unparalleled networking opportunities in prestigious settings.",
+      "<b>From established artists to emerging talents,</b> Tuffex opens doors to forge meaningful relationships that propel your career forward.",
     videoSRC: "/videos/rapper5.mp4",
   },
   {
     title: "Strategic Partnerships and Sponsorships",
-    subtitle:
-      "Unlock lucrative partnership opportunities and sponsorship deals through Tuffex's extensive network of brands and companies.",
+    subtitle: "Gain access to a curated community of music industry elites",
     description:
-      "<b>Whether it's securing endorsements, licensing agreements, or brand collaborations, </b> , our platform facilitates mutually beneficial partnerships that drive revenue growth and expand your brand's reach.",
+      "<b>From established artists to emerging talents,</b> Tuffex opens doors to forge meaningful relationships that propel your career forward.",
     videoSRC: "/videos/rapper6.mp4",
   },
 ];

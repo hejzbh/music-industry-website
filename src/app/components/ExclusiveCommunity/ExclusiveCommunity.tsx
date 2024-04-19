@@ -29,7 +29,7 @@ const ExclusiveCommunity = ({ className = "" }: ExclusiveCommunityProps) => {
       </div>
       {/** Banner with animated card */}
       <div className="flex justify-center items-center ">
-        <div className="w-[90%] py-5 relative">
+        <div className="w-[90%] py-5 relative pb-20">
           <ExclusiveCommunityBanner />
         </div>
       </div>
